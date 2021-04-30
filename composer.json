@@ -1,0 +1,32 @@
+{
+    "name": "dylan/treasurer-bot",
+    "description": "Discord bot for keeping track of treasure",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Dylan Fontaine",
+            "email": "dylanfontaine@live.ca"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TreasurerBot\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "vlucas/phpdotenv": "^5.3",
+        "discord-php/slash": "^1.0",
+        "team-reflex/discord-php": "^6.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.18",
+        "phpunit/phpunit": "^9.5"
+    }
+}
