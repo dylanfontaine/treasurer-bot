@@ -21,12 +21,18 @@
     "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
+        "php": ">=7.4",
         "vlucas/phpdotenv": "^5.3",
         "discord-php/slash": "^1.0",
         "team-reflex/discord-php": "^6.0"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-latest"
+        ,
         "friendsofphp/php-cs-fixer": "^2.18",
         "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "qodana": "docker run --rm -it -v `pwd`/:/data/project/ -p 8080:8080 jetbrains/qodana --show-report"
     }
 }
